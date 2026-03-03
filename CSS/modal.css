@@ -1,0 +1,103 @@
+@charset "UTF-8";
+/* ===============================
+   Modal Size Control
+================================ */
+:root {
+  --modal-max-width: 100%;
+  --modal-max-height: 80%;
+}
+
+/* レスポンシブ */
+@media (max-width: 1024px) {
+  :root {
+    --modal-max-width: 75%;
+  }
+}
+@media (max-width: 600px) {
+  :root {
+    --modal-max-width: 92%;
+    --modal-max-height: 85%;
+  }
+}
+/* ===============================
+   Modal Base
+================================ */
+.modal {
+  position: fixed;
+  inset: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.modal.is-active {
+  visibility: visible;
+  pointer-events: auto;
+}
+
+/* Overlay */
+.modal-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  opacity: 0;
+}
+
+/* Image */
+#modalContent {
+  position: fixed;
+  max-width: var(--modal-max-width);
+  max-height: var(--modal-max-height);
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 16px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
+  will-change: transform;
+}
+
+.modal-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.image-credit {
+  margin-top: 12px;
+  font-size: 0.85rem;
+  color: #ddd;
+}
+
+.image-credit-link {
+  color: #ccc;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.image-credit-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Close Button */
+.close-btn {
+  position: fixed;
+  top: 30px;
+  right: 40px;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0;
+}
+
+/* Scroll Lock */
+body.modal-open {
+  overflow: hidden;
+}/*# sourceMappingURL=modal.css.map */
