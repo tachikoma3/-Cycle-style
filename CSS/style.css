@@ -329,6 +329,11 @@ DeskTop Size
 
 /* ===== スマホ対応（480px以下） ===== */
 @media (max-width: 480px) {
+ 
+ .hero-img {
+  width: 500%;
+ }
+ 
   .box {
     padding: 12px;
     font-size: 14px;
