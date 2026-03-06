@@ -339,11 +339,18 @@ DeskTop Size
   }
 
 
-/* ===== Small Smartphone (〜480px) ===== */
 
-@media (max-width: 480px) {
   .gallery-thumbnails {
   margin: 1rem 16px;
   width: 300px;  }
-}
+
+  .feature__img{
+    width: 65%;
+    height: auto;
+  }
+
+  .creator__img{
+    width: 300%;
+    height: auto;
+  }
 }
