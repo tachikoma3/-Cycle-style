@@ -46,11 +46,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // モーダルを画面中央へ拡大移動（width/heightはautoへ戻す）
         gsap.to(modalContent, {
-          top: window.innerHeight / 2,
-          left: window.innerWidth / 2,
-          clearProps: "width,height", // 固定サイズ解除
-          xPercent: -50,
-          yPercent: -50,
+          // top: window.innerHeight / 2,
+          // left: window.innerWidth / 2,
+          // top: Math.round(originalRect.top),
+          // left: Math.round(originalRect.left),
+          // clearProps: "width,height", // 固定サイズ解除
+          // xPercent: -50,
+          // yPercent: -50,
+        top: "50%",
+        left: "50%",
+        xPercent: -50,
+        yPercent: -50,
+        width: "auto",
+        height: "auto",
           duration: 0.6,
           ease: "power3.out"
         });
