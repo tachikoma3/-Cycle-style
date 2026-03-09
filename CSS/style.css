@@ -19,6 +19,11 @@
   p{
     font-size: small;
   }
+  
+  img { 
+    max-width: 100%; 
+    height: auto; 
+  }
 
   rb{
     font-size: smaller;
@@ -118,7 +123,7 @@ section {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-gap: 30px;
+  gap: 30px;
 }
 
 .hero-top {
@@ -247,8 +252,8 @@ list-style-position: inside;
 .creator__img {
   border-radius: 16px;
   object-fit: cover;
-  max-width: 80%;
-  width: 50%;
+  max-width: 100%;
+  width: 80%;
   height: auto;
 }
 
@@ -345,6 +350,10 @@ DeskTop Size
 /* ===== スマホ対応（480px以下） ===== */
 @media (max-width: 480px) {
   
+.hero {
+  display: flex;
+  flex-direction: column;
+}
 
   .box {
     padding: 12px;
@@ -354,6 +363,11 @@ DeskTop Size
   .box h2 {
     font-size: 18px;
   }
+
+  .creator {
+  display: flex;
+  flex-flow: column;
+}
 
 
 /* ===== Small Smartphone (〜480px) ===== */
