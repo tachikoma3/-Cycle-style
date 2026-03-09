@@ -29,14 +29,14 @@ document.addEventListener("DOMContentLoaded", () => {
       modalImage.onload = () => {
 
         // モーダルを「元画像と同じ位置・サイズ」にセット
-        gsap.set(modalContent, {
-          top: originalRect.top,
-          left: originalRect.left,
-          width: originalRect.width,
-          height: originalRect.height,
-          xPercent: 0,
-          yPercent: 0
-        });
+        // gsap.set(modalContent, {
+        //   top: originalRect.top,
+        //   left: originalRect.left,
+        //   width: originalRect.width,
+        //   height: originalRect.height,
+        //   xPercent: 0,
+        //   yPercent: 0
+        // });
 
         // オーバーレイをフェードイン
         gsap.to(overlay, {
