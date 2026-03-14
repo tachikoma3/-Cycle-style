@@ -9,6 +9,7 @@ $(function() {
   // ============================
   // サムネ表示アニメ（スクロール）
   // ============================
+  
   gsap.from(".gallery-thumbnails li", {
     scrollTrigger: {
       trigger: ".gallery-thumbnails",
