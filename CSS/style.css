@@ -9,7 +9,6 @@
 
   h2{
     font-size: medium;
-    margin-left: 5%;
   }
 
   p{
@@ -51,7 +50,7 @@
 }
 
 .subtitle {
-  margin-left: 20%;
+  margin-left: 13%;
   font-family: "Kaisei Decol", serif;
 }
 
@@ -129,7 +128,8 @@ section {
 }
 
 .hero-img {
-  width: 100%;
+  max-width: 100%;
+  width: 90%;
   height: auto;
   border-radius: 20px;
   object-fit: cover;
@@ -205,6 +205,9 @@ section {
   border-radius: 10px;
 }
 
+/*///////////////////////////////////////////
+          服装と装着品
+//////////////////////////////////////////*/
 .feature {
   display: flex;
   flex-flow: row wrap;
@@ -218,6 +221,8 @@ section {
   overflow: hidden;
   width: 30%;
   height: auto;
+  font-size: 14px;
+  list-style-position: inside;
   will-change: transform, opacity;
 }
 
