@@ -1,3 +1,5 @@
+ gsap.registerPlugin(ScrollTrigger);
+ 
  // ---------- スクロールスライドイン ----------
   const observer = new IntersectionObserver((entries, obs) => {
     entries.forEach(entry => {

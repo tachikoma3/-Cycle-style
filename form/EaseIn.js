@@ -1,15 +1,15 @@
 // .feature 要素をすべて配列として取得し、1つずつ処理
-gsap.utils.toArray(".feature, .creator").forEach(section => {
+gsap.utils.toArray(".feature").forEach(section => {
 
   // 各セクション内の画像とテキスト要素を取得
-  const img = section.querySelectorAll(".feature__img, .creator__img");
-  const text = section.querySelectorAll(".feature__text, .creator__text");
+  const img = section.querySelector(".feature__img");
+  const text = section.querySelector(".feature__text");
 
   // セクションごとにタイムラインを生成
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: section,      // このセクションがトリガー
-      start: "top 60%"       // セクション上部が画面の60%位置に来たら発火
+      start: "top 80%"       // セクション上部が画面の80%位置に来たら発火
       // once: true をここに書くとScrollTrigger全体を1回だけにできる
     }
   });
