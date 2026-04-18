@@ -1,5 +1,5 @@
 
-$(function() {
+(function() {
 
   const $thumbnails = $(".gallery-thumbnails img");
   const $modal = $(".image-modal");
